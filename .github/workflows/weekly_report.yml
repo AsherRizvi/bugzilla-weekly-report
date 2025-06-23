@@ -25,7 +25,7 @@ jobs:
         run: python weekly_bugzilla_report.py
 
       - name: Upload report image
-      - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: bugzilla-report
           path: weekly_reports/
